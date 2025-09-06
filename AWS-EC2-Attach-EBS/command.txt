@@ -1,0 +1,17 @@
+# Project 3: Attach EBS Volume
+
+# List block devices
+lsblk
+
+# Format volume
+sudo mkfs -t ext4 /dev/xvdf
+
+# Create mount directory
+sudo mkdir /data
+
+# Mount volume
+sudo mount /dev/xvdf /data
+
+# Verify
+df -h
+
